@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* You can add global styles to this file, and also import other style files */
+
+
+.container{
+  min-height: 70vh;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.container mat-card form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container mat-card mat-card-content{
+  width: 100%;
+}
+
+.container mat-card form input{
+  width: 100%!important;
+}
+
+.container mat-card button{
+  margin-top: 20px;
+}
+
+.color{
+  color: white!important;
+}

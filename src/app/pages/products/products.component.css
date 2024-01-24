@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  min-height: 100px;
+}
+
+.flex{
+  display: flex;
+  gap: 4px;
+}
+
+button{
+  margin:10px 0;
+}
+
+.container{
+  flex-direction: column;
+}
+
+.container mat-card{
+  width: 470px;
+}

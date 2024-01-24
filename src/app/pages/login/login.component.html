@@ -1,0 +1,38 @@
+<div class="container">
+  <mat-card>
+    <mat-card-header>Login</mat-card-header>
+    <form [formGroup]="loginForm">
+      <!-- <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput
+          placeholder="Username"
+          type="text"
+          required>
+      </mat-form-field> -->
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput
+          placeholder="example@example.com"
+          type="email"
+          required
+          formControlName="EmailId"
+          >
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input matInput
+          type="password"
+          required
+          formControlName="Password"
+          >
+        <mat-hint>Password must be 8 characters</mat-hint>
+      </mat-form-field>
+
+
+      <button mat-flat-button
+        color="primary" (click)="$event.preventDefault; onLogin()">Login</button>
+    </form>
+  </mat-card>
+</div>

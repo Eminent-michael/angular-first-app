@@ -1,0 +1,7 @@
+<p>dashboard works!</p>
+
+<button mat-flat-button color="warn" (click)="loadUsers()">Get users</button>
+
+<div *ngFor="let user of users">
+  {{ user | json}}
+</div>
